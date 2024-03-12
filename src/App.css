@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+* {
+  /* border: 1px solid #000 */
+}
+
+.WebsiteHeader, .OrderInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.WebsiteHeader, .OrderInfo, .Table {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.OrderInfo {
+  background-color: #bebebe;
+}
+
+.Logo {
+  flex: 0.25;
+  margin: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.Selector {
+  align-self: flex-start;
+  flex: 0.75;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+  height: 2.5vh;
+  width: 50px;
+}
+
+.ProjectSelector, .ProfileSelector, .LogOutSelector {
+  background-color: transparent;
+  border: 2px solid #000; /* Black border */
+  color: #000; /* Black text */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s; /* Transition effect */
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+  margin: 5px;
+}
+
+.ProjectSelector:hover, .ProfileSelector:hover, .LogOutSelector:hover{
+  background-color: #000; /* Black background */
+  color: white; /* White text */
+}
+
+.OrderInfo {
+  display: flex;
+}
+
+.OrderInfo > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  margin: 10px;
+  color: #424242;
+}
+
+.OrderInfo > * > * > :not(.OrderInfo > *) {
+  color: #333333;
+  font-weight: bold;
+}
+
+.Table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.Table {
+  margin-top: 0vh; /* Adjust the value as needed */
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.TableHeadGroup,
+.TableHeadComponentID,
+.TableHeadQTY,
+.TableHeadWeight,
+.TableHeadFile,
+.TableHeadLabel {
+  height: 5vh;
+  background-color: #db5a14;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.TableHeadGroup {
+  width: 15vw;
+}
+
+a:link, a:visited {
+  color: #333333; /* Change to your desired color */
+  text-decoration: underline; /* Removes the underline */
+}
+
+.TableHeadComponentID {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TableSelector {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 2px solid #000; /* Black border */
+  border-radius: 10px;
+  font-size: 14px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.btn.selected {
+  color: white;
+  background-color: #db5a14;
+}
