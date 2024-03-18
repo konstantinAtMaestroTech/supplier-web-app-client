@@ -27,7 +27,7 @@ export default function ProductionTable({ selectedProject, selectedProfile, sele
   const [tableData, setTableData] = useState([]);
   const [show, setShow] = useState(false);
   const [selectedUniqueID, setSelectedUniqueID] = useState([]);
-  const url = 'http://localhost:3001/getData/elements';
+  const url = 'http://13.53.130.105:3001/getData/elements';
 
   const showModal = () => {
     setShow(true);

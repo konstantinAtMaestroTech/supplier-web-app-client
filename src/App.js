@@ -19,7 +19,7 @@ function App() {
   console.log(selectedProfile);
 
   useEffect(() => {
-    const url = 'http://localhost:3001/getData/producers';
+    const url = 'http://13.53.130.105:3001/getData/producers';
     let isMounted = true;
     const fetchData = async () => {
       try{
