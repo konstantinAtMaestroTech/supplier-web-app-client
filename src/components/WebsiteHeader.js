@@ -34,7 +34,7 @@ function Selector({value, setProfile, selectedProfile, setProject, setURN}) {
 function ProjectSelector({selectedProfile, setProject, setURN}) {
 
   const [projects, setProjects] = useState([]);
-  const url = 'http://13.60.18.89:3001/getData/projects';
+  const url = 'http://13.60.57.117:3001/getData/projects';
 
   useEffect(() => {
     const fetchData = async () => {
