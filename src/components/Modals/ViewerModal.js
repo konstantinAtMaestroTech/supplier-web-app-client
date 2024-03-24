@@ -6,7 +6,7 @@ const Modal = ({ handleClose, show, urn, uniqueID }) => {
 
     useEffect(() => {
 
-        const url = 'http://13.53.130.105:8080/assemblyID';
+        const url = 'http://13.60.18.89:8080/assemblyID';
 
         const fetchData = async () => {
             try{
@@ -24,7 +24,7 @@ const Modal = ({ handleClose, show, urn, uniqueID }) => {
     }, [uniqueID]);
     
     const showHideClassName = show ? "modal display-block" : "modal display-none";
-    const viewerUrl = 'http://13.53.130.105:8080/#' + urn;
+    const viewerUrl = 'http://13.60.18.89:8080/#' + urn;
 
     return (
     <div className={showHideClassName}>
