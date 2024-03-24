@@ -6,7 +6,7 @@ const Modal = ({ handleClose, show, urn, uniqueID }) => {
 
     useEffect(() => {
 
-        const url = 'https://supplier-web-app.maestrotest.info/assemblyID';
+        const url = 'https://viewer-web-app.maestrotest.info/assemblyID';
 
         const fetchData = async () => {
             try{
@@ -24,7 +24,7 @@ const Modal = ({ handleClose, show, urn, uniqueID }) => {
     }, [uniqueID]);
     
     const showHideClassName = show ? "modal display-block" : "modal display-none";
-    const viewerUrl = 'https://supplier-web-app.maestrotest.info/#' + urn;
+    const viewerUrl = 'https://viewer-web-app.maestrotest.info/#' + urn;
 
     return (
     <div className={showHideClassName}>
