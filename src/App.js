@@ -19,7 +19,7 @@ function App() {
   console.log(selectedProfile);
 
   useEffect(() => {
-    const url = 'http://13.60.57.117:3001/getData/producers';
+    const url = 'https://supplier-web-app.maestrotest.info/getData/producers';
     let isMounted = true;
     const fetchData = async () => {
       try{
