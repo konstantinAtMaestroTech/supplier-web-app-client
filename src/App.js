@@ -19,7 +19,7 @@ function App() {
   console.log(selectedProfile);
 
   useEffect(() => {
-    const url = 'https://supplier-web-app.maestrotest.info/getData/producers';
+    const url = 'https://server-web-app.maestrotest.info/getData/producers';
     let isMounted = true;
     const fetchData = async () => {
       try{

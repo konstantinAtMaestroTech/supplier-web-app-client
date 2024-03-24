@@ -27,7 +27,7 @@ export default function ProductionTable({ selectedProject, selectedProfile, sele
   const [tableData, setTableData] = useState([]);
   const [show, setShow] = useState(false);
   const [selectedUniqueID, setSelectedUniqueID] = useState([]);
-  const url = 'https://supplier-web-app.maestrotest.info/getData/elements';
+  const url = 'https://server-web-app.maestrotest.info/getData/elements';
 
   const showModal = () => {
     setShow(true);
